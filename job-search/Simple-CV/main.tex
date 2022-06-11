@@ -1,0 +1,36 @@
+
+\documentclass[letterpaper,11pt]{article}
+
+% Choose bibliography style for formatting list of publications
+\usepackage[style=ieee,url=false,doi=false,maxbibnames=99,sorting=ydnt,dashed=false]{biblatex}
+\bibliography{papers}
+
+\def\theme{MidnightBlue}
+
+\usepackage{simplecv}
+
+\boldname{Surname}{Name}{N.}
+
+\begin{document}
+
+% Heading
+\headinginline{James Feldmayer}{
+    Email: \email{james.feldmayer01@gmail.com} \\
+    GitHub: \github{James-Feldmayer} \\
+    Phone: 0417 645 079 \\
+    Address: 40 Dominic Street, Burraneer 2230
+}
+
+% Move project from Gitlab to github
+
+% Page One
+\import{sections/}{education.tex}
+\import{sections/}{experience.tex}
+\import{sections/}{projects.tex}
+\import{sections/}{technologies.tex}
+
+\pagebreak
+
+\import{sections/}{references.tex}
+
+\end{document}
